@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="527.0" prefWidth="705.0" spacing="20.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.crud.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <Label text="PRODUCTO" textFill="#da1313">
+      <font>
+         <Font name="System Bold" size="35.0" />
+      </font>
+   </Label>
+   <Pane prefHeight="157.0" prefWidth="665.0">
+      <children>
+         <Label layoutX="34.0" layoutY="1.0" text="Nombre:">
+            <font>
+               <Font name="System Bold" size="17.0" />
+            </font>
+         </Label>
+         <TextField layoutX="122.0" layoutY="2.0" prefHeight="25.0" prefWidth="391.0" />
+         <Label layoutX="31.0" layoutY="41.0" text="Candidad">
+            <font>
+               <Font name="System Bold" size="17.0" />
+            </font>
+         </Label>
+         <TextField layoutX="122.0" layoutY="41.0" prefHeight="25.0" prefWidth="149.0" />
+         <Label layoutX="34.0" layoutY="80.0" text="Precio">
+            <font>
+               <Font name="System Bold" size="17.0" />
+            </font>
+         </Label>
+         <TextField layoutX="122.0" layoutY="80.0" />
+          <Button layoutX="223.0" layoutY="118.0" onAction="#onHelloButtonClick" prefHeight="25.0" prefWidth="71.0" text="Agregar" />
+         <Button layoutX="307.0" layoutY="118.0" mnemonicParsing="false" onAction="#onBtnMostrarClick" prefHeight="25.0" prefWidth="71.0" style="-fx-background-color: green;" text="Mostrar" textFill="#fcfafa">
+            <font>
+               <Font name="System Bold" size="12.0" />
+            </font>
+         </Button>
+      </children>
+   </Pane>
+
+
+    <Label fx:id="welcomeText" />
+    <ListView fx:id="listaDatos" prefHeight="200.0" prefWidth="200.0" />
+</VBox>
